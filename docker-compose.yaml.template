@@ -130,7 +130,7 @@ services:
     volumes:
       - type: bind
         source: ${oc.env:PWD}/volumes/lnd_datadir
-        target: /etc/lnd
+        target: /root/.lnd
         read_only: true
       - type: bind
         source: ${oc.env:PWD}/volumes/thub_datadir
