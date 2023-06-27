@@ -4,7 +4,7 @@ networks: {}
 services:
   bitcoind:
     build: 
-      context: ./bitcoin-signet
+      context: ./bitcoin-regtest
       dockerfile: Dockerfile
       args:
         - TRIPLET=${TRIPLET}
